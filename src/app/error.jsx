@@ -2,12 +2,9 @@
 import React, { useEffect } from "react";
 
 const Error = ({ error, reset }) => {
-  useEffect(
-    () => {
-      console.log(error);
-    },
-    { error }
-  );
+  useEffect(() => {
+    console.log(error);
+  }, [error]);
   return (
     <div className="text-center">
       <h1>Something Went Wrong</h1>
